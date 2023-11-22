@@ -11,9 +11,9 @@ class Player(pygame.sprite.Sprite):
 
 
         self.client1 = socket.socket(socket.AF_INET, socket.SOCK_DGRAM)
-        self.client1.settimeout(.50)
+        self.client1.settimeout(100.50)
         self.client1.bind(('0.0.0.0', 2346))
-        self.client2_ip = '10.220.93.43'
+        self.client2_ip = '127.0.0.1'
         self.client2_port = 2345
         
 
